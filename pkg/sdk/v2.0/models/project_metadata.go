@@ -17,6 +17,9 @@ import (
 // swagger:model ProjectMetadata
 type ProjectMetadata struct {
 
+	// Whether generating SBOM automatically when pushing a subject artifact. The valid values are "true", "false".
+	AutoSbomGeneration *string `json:"auto_sbom_generation,omitempty"`
+
 	// Whether scan images automatically when pushing. The valid values are "true", "false".
 	AutoScan *string `json:"auto_scan,omitempty"`
 

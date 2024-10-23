@@ -30,8 +30,8 @@ type Robot struct {
 	// The disable status of the robot
 	Disable bool `json:"disable"`
 
-	// The duration of the robot in days
-	Duration int64 `json:"duration,omitempty"`
+	// The duration of the robot in days, duration must be either -1(Never) or a positive integer
+	Duration *int64 `json:"duration,omitempty"`
 
 	// The editable status of the robot
 	Editable bool `json:"editable"`
